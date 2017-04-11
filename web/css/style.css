@@ -147,11 +147,31 @@ banner
     background-color: rgba(12, 184, 182) !important;
 }
 
-#banner {
-    background: url('../img/bg-banner.jpg') no-repeat fixed;
-    background-size: cover;
-    min-height: 650px;
-    position: relative;
+@media (min-width: 320px) and (max-width: 480px) {
+    /* iPhone, Android rules here */
+    #banner {
+        background: url('../img/bg-banner1.jpg') no-repeat fixed;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* rules for iPad in landscape orientation */
+    #banner {
+        background: url('../img/bg-banner2.jpg') no-repeat fixed;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+@media (min-width: 769px) {
+    /* rules that only apply for canvases narrower than 1000px */
+    #banner {
+        background: url('../img/bg-banner.jpg') no-repeat fixed;
+        background-size: cover;
+        position: relative;
+    }
 }
 
 .bg-color {
@@ -180,12 +200,10 @@ banner
 }
 
 .btn-appoint, .btn-appoint:hover, .btn-appoint:focus {
-    margin-top: 30px;
-    padding: 10px 20px;
-    font-size: 12px;
-    background-color: rgba(12, 184, 182, 0.91);
-    border-radius: 3px;
+    background-color: #0cb8b6;
     color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
 }
 
 .overlay-detail a i {
