@@ -154,6 +154,11 @@ banner
         background-size: cover;
         position: relative;
     }
+
+    .banner-logo img {
+        display: inline-block;
+        width: 90%;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -162,6 +167,11 @@ banner
         background: url('../img/bg-banner2.jpg') no-repeat fixed;
         background-size: cover;
         position: relative;
+    }
+
+    .banner-logo img {
+        display: inline-block;
+        width: 70%;
     }
 }
 
@@ -172,6 +182,11 @@ banner
         background-size: cover;
         position: relative;
     }
+
+    .banner-logo img {
+        display: inline-block;
+        width: 30%;
+    }
 }
 
 .bg-color {
@@ -181,11 +196,6 @@ banner
 
 .banner-info {
     padding-top: 190px;
-}
-
-.banner-logo img {
-    display: inline-block;
-    width: 30%;
 }
 
 .banner-text {
