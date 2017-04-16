@@ -21,6 +21,18 @@
     ======================================================= -->
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!--facebook-->
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <!--banner-->
 <section id="banner" class="banner">
     <div class="bg-color">
@@ -40,9 +52,8 @@
                             <li class="active"><a href="#banner">INICIO</a></li>
                             <li class=""><a href="#about">DRA. MARCELA ARIAS</a></li>
                             <li class=""><a href="#nosurgery">NO QUIRÚRGICOS</a></li>
-                            <li class=""><a href="#surgery">QUIRÚRGICOS</a></li>
-                            <li class=""><a href="#reconstructive">RECONSTRUCTIVA</a></li>
-                            <!--li class=""><a href="#testimonial">Testimonial</a></li-->
+                            <li class=""><a href="#surgeryface">CIRUGÍA FACIAL</a></li>
+                            <li class=""><a href="#surgerybody">CIRUGÍA CORPORAL</a></li>
                             <li class=""><a href="#contact">CONTÁCTANOS</a></li>
                         </ul>
                     </div>
@@ -82,10 +93,10 @@
 <section id="about" class="section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="col-md-3 col-sm-3 col-xs-12">
                 <div class="section-title">
                     <!--span class="icon"><i class="fa fa-user-md"></i></span-->
-                    <h2 class="head-title lg-line"> Dra. Marcela Arias </h2>
+                    <h3 class="head-title lg-line"> Dra. Marcela Arias </h3>
                     <hr class="botm-line">
                     <div class="embed-responsive embed-responsive-4by3">
                         <img src="img/bg-banner1.jpg" width="100%">
@@ -95,7 +106,7 @@
                         Universidad Javeriana</a>
                 </div>
             </div>
-            <div class="col-md-9 col-sm-8 col-xs-12">
+            <div class="col-md-9 col-sm-9 col-xs-12">
                 <div style="visibility: visible;" class="more-features-box">
                     <div class="more-features-box-text">
                         <div class="more-features-box-text-icon"><i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -153,7 +164,7 @@
                 <h2 class="ser-title">NO QUIRÚRGICOS</h2>
                 <hr class="botm-line">
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/plasma.jpg" alt="PLASMA RICO EN PLAQUETAS" class="team-img">
 
@@ -209,7 +220,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/botox.jpg" alt="TOXINA BOTULÍNICA" class="team-img">
 
@@ -264,47 +275,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-6">
-                <div class="thumbnail">
-                    <img src="img/hialuronico.jpg" alt="ÁCIDO HIALURONICO" class="team-img">
-
-                    <div class="caption text-justify">
-                        <h3>ÁCIDO HIALURONICO</h3>
-                        <h4>¿Qué es?</h4>
-
-                        <p>
-                            Es una sustancia de origen natural utilizado para hidratar la piel y como relleno.
-                        </p>
-                        <h4>¿Para qué sirve?</h4>
-
-                        <p>
-                            Se utiliza para hidratar la piel, relleno de arrugas y dar volumen en áreas afectadas por el
-                            proceso de envejecimiento.
-                            Útil en la corrección de pliegue glabellar, naso labial y del mentón, así como para dar
-                            definición y volumen a los labios.
-                            Según la densidad tiene aplicaciones como aumento de pómulos y rejuvenecimiento facial.
-                        </p>
-                        <h4>¿Cómo es el procedimiento?</h4>
-
-                        <p>
-                            Es un procedimiento ambulatorio, no requiere preparación ni incapacidad. Se realiza en el
-                            consultorio y los resultados son inmediatos
-                            Se aplica directamente en el área a tratar.
-                        </p>
-                        <h4>¿Cada cuánto lo debo usar?</h4>
-
-                        <p>
-                            Los resultados se observan de inmediato y su efecto varía entre 6 meses a 1 año
-                        </p>
-                        <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/colageno.jpg" alt="TERAPIA DE INDUCCIÓN DE COLÁGENO" class="team-img">
 
@@ -357,200 +328,88 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="thumbnail">
+                    <img src="img/hialuronico.jpg" alt="ÁCIDO HIALURONICO" class="team-img">
+
+                    <div class="caption text-justify">
+                        <h3>ÁCIDO HIALURONICO</h3>
+                        <h4>¿Qué es?</h4>
+
+                        <p>
+                            Es una sustancia de origen natural utilizado para hidratar la piel y como relleno.
+                        </p>
+                        <h4>¿Para qué sirve?</h4>
+
+                        <p>
+                            Se utiliza para hidratar la piel, relleno de arrugas y dar volumen en áreas afectadas por el
+                            proceso de envejecimiento.
+                            Útil en la corrección de pliegue glabellar, naso labial y del mentón, así como para dar
+                            definición y volumen a los labios.
+                            Según la densidad tiene aplicaciones como aumento de pómulos y rejuvenecimiento facial.
+                        </p>
+                        <h4>¿Cómo es el procedimiento?</h4>
+
+                        <p>
+                            Es un procedimiento ambulatorio, no requiere preparación ni incapacidad. Se realiza en el
+                            consultorio y los resultados son inmediatos
+                            Se aplica directamente en el área a tratar.
+                        </p>
+                        <h4>¿Cada cuánto lo debo usar?</h4>
+
+                        <p>
+                            Los resultados se observan de inmediato y su efecto varía entre 6 meses a 1 año
+                        </p>
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fb-comments col-md-6 col-sm-12 col-xs-12"
+                 data-href="https://marcelaarias.herokuapp.com/#nosurgery" data-numposts="5"></div>
         </div>
     </div>
 </section>
 <!--/ nosurgery-->
-<!--surgery-->
-<section id="surgery" class="section-padding">
+<!--surgeryface-->
+<section id="surgeryface" class="section-padding">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="ser-title">QUIRÚRGICOS</h2>
+                <h2 class="ser-title">CIRUGÍA FACIAL</h2>
                 <hr class="botm-line">
             </div>
-        </div>
-
-        <div class="media col-md-4 col-sm-6">
-            <div class="media-left"><a href="#">
-                <img alt="64x64" class="media-object" src="img/plasma.jpg" data-holder-rendered="true"
-                     style="width: 100px; "> </a>
-            </div>
-            <div class="media-body text-justify">
-                <h4 class="media-heading">Middle aligned media</h4>
-
-                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
-                    commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum
-                    nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-
-                <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
-                    penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div>
-        </div>
-        <div class="media col-md-4 col-sm-6">
-            <div class="media-left"><a href="#">
-                <img alt="64x64" class="media-object" src="img/plasma.jpg" data-holder-rendered="true"
-                     style="width: 100px; "> </a>
-            </div>
-            <div class="media-body text-justify">
-                <h4 class="media-heading">Middle aligned media</h4>
-
-                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
-                    commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum
-                    nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-
-                <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
-                    penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div>
-        </div>
-        <div class="media col-md-4 col-sm-6">
-            <div class="media-left"><a href="#">
-                <img alt="64x64" class="media-object" src="img/plasma.jpg" data-holder-rendered="true"
-                     style="width: 100px; "> </a>
-            </div>
-            <div class="media-body text-justify">
-                <h4 class="media-heading">Middle aligned media</h4>
-
-                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
-                    commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum
-                    nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-
-                <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
-                    penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div>
-        </div>
-
-    </div>
-    </div>
-</section>
-<!--/ surgery-->
-<!--reconstructive-->
-<section id="reconstructive" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-4">
-                <h2 class="ser-title">Our surgery</h2>
-                <hr class="botm-line">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    cillum.</p>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="service-info">
-                    <div class="icon">
-                        <i class="fa fa-stethoscope"></i>
-                    </div>
-                    <div class="icon-info">
-                        <h4>24 Hour Support</h4>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="service-info">
-                    <div class="icon">
-                        <i class="fa fa-ambulance"></i>
-                    </div>
-                    <div class="icon-info">
-                        <h4>Emergency Services</h4>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="service-info">
-                    <div class="icon">
-                        <i class="fa fa-user-md"></i>
-                    </div>
-                    <div class="icon-info">
-                        <h4>Medical Counseling</h4>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="service-info">
-                    <div class="icon">
-                        <i class="fa fa-medkit"></i>
-                    </div>
-                    <div class="icon-info">
-                        <h4>Premium Healthcare</h4>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/ reconstructive-->
-<!--cta-->
-<section id="cta-1" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="schedule-tab">
-                <div class="col-md-4 col-sm-4 bor-left">
-                    <div class="mt-boxy-color"></div>
-                    <div class="medi-info">
-                        <h3>Emergency Case</h3>
-
-                        <p>I am text block. Edit this text from Appearance / Customize / Homepage header columns. Lorem
-                            ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        <a href="#" class="medi-info-btn">READ MORE</a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                    <div class="medi-info">
-                        <h3>Emergency Case</h3>
-
-                        <p>I am text block. Edit this text from Appearance / Customize / Homepage header columns. Lorem
-                            ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        <a href="#" class="medi-info-btn">READ MORE</a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 mt-boxy-3">
-                    <div class="mt-boxy-color"></div>
-                    <div class="time-info">
-                        <h3>Opening Hours</h3>
-                        <table style="margin: 8px 0px 0px;" border="1">
-                            <tbody>
-                            <tr>
-                                <td>Monday - Friday</td>
-                                <td>8.00 - 17.00</td>
-                            </tr>
-                            <tr>
-                                <td>Saturday</td>
-                                <td>9.30 - 17.30</td>
-                            </tr>
-                            <tr>
-                                <td>Sunday</td>
-                                <td>9.30 - 15.00</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--cta-->
-<!--doctor team-->
-<section id="doctor-team" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="ser-title">Meet Our Doctors!</h2>
-                <hr class="botm-line">
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
-                    <img src="img/doctor1.jpg" alt="..." class="team-img">
+                    <img src="img/frontoplastia.jpg" alt="FROTOPLASTIA" class="team-img">
 
-                    <div class="caption">
-                        <h3>Jessica Wally</h3>
+                    <div class="caption text-justify">
+                        <h3>FROTOPLASTIA</h3>
 
-                        <p>Doctor</p>
+                        <p>
+                            Es una intervención quirúrgica que busca disminuir de forma significativa las arrugas de la
+                            frente, posicionar las cejas y disminuir las líneas alrededor de los ojos “patas de
+                            gallina”; con el fin de recuperar una mirada joven, al reposicionar los tejidos que por el
+                            proceso de envejecimiento han perdido su tono y elasticidad.
+                        </p>
+
+                        <p>
+                            El procedimiento se realiza bajo anestesia general por medio de pequeñas incisiones en el
+                            cuero cabelludo por lo cual no presentara cicatrices visibles. Tiene una duración aproximada
+                            de 90 minutos y puede realizarse en conjunto con la cirugía de parpados (Blefaroplastia)
+                            para optimizar los resultados.
+                        </p>
+
+                        <p>
+                            En los días siguientes a la cirugía deberás permanecer en casa para protegerte del sol, y
+                            aplicar terapias de frio y calor con el fin de disminuir la inflamación, sin embargo,
+                            pondrás realizar todas tus actividades básicas; aproximadamente a los 7 días podrás volver a
+                            tu trabajo y el edema resolverá por completo a las 4 semanas.
+                        </p>
+
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -559,14 +418,35 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
-                    <img src="img/doctor2.jpg" alt="..." class="team-img">
+                    <img src="img/botox.jpg" alt="BLEFAROPLASTIA" class="team-img">
 
-                    <div class="caption">
-                        <h3>Iai Donas</h3>
+                    <div class="caption text-justify">
+                        <h3>BLEFAROPLASTIA</h3>
 
-                        <p>Doctor</p>
+                        <p>
+                            Con el paso del tiempo, la elasticidad y el todo de la piel de los parpados va disminuyendo
+                            progresivamente, provocando una mirada apagada con piel redundante y protrusión de bolsas
+                            grasas que dan la apariencia de ojos cansados, acentúan las arrugas peri oculares (Patas de
+                            gallina), y en algunos casos producen alteraciones funcionales al ocluir el campo visual.
+                        </p>
+
+                        <p> La Blefaroplastia es una intervención ambulatoria que se puede realizar bajo anestesia local
+                            o general, tiene una duración entre 1 a 2 horas, según el área a tratar, teniendo en cuenta
+                            que no todos los pacientes requieren intervención en los 4 parpados.
+
+                            El procedimiento cosiste en retirar el exceso de piel de los parpados y la resección parcial
+                            de las bolsas grasas. En pacientes jóvenes en quienes presentan bolsas prominentes
+                            inferiores “ojeras” sin exceso significativo de piel, es posible realizar la resección de
+                            las mismas por medio de una pequeña incisión sin cicatrices visibles.
+                        </p>
+
+                        <p>
+                            En las primeras 24 horas de la cirugía necesitas aplicar bolsas frías para disminuir la
+                            inflamación, los puntos se retiran al día 5 y podrás volver a tu trabajo al día siguiente;
+                            sin embargo, es indispensable que uses lentes oscuros y bloqueador solar.
+                        </p>
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -575,14 +455,36 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
-                    <img src="img/doctor3.jpg" alt="..." class="team-img">
+                    <img src="img/otoplastia.jpg" alt="OTOPLASTIA" class="team-img">
 
-                    <div class="caption">
-                        <h3>Amanda Denyl</h3>
+                    <div class="caption text-justify">
+                        <h3>OTOPLASTIA</h3>
 
-                        <p>Doctor</p>
+                        <p>
+                            La otoplastía se encuentra indicada en pacientes que presentan orejas grandes, sobre
+                            proyectadas (orejas en pantalla), asimétricas, o con forma poco frecuente.
+                        </p>
+
+                        <p>
+                            El momento ideal para esta intervención es a partir de los 5 años, previo al inicio de la
+                            vida escolar. En los adultos no hay límite de edad.
+                        </p>
+
+                        <p>
+                            El procedimiento se realiza bajo anestesia local o general y tiene una duración de 60 a 90
+                            minutos; busca mejorar la forma de las orejas por medio de incisiones en sobre los pliegues
+                            naturales (generalmente por detrás) para modificar el cartílago; y de esta forma alcanzar
+                            una apariencia estética y armónica con las demás estructuras de la cabeza.
+                        </p>
+
+                        <p>
+                            En los primeros días tendrás una venda alrededor de la cabeza y a los 7 días podrás volver a
+                            tus actividades cotidianas, usando una balaca durante 1 mes. Es un procedimiento con
+                            resultados naturales y cicatrices no visibles
+                        </p>
+
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -591,14 +493,35 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
-                    <img src="img/doctor4.jpg" alt="..." class="team-img">
+                    <img src="img/rinoplastia.jpg" alt="RINOPLASTIA" class="team-img">
 
-                    <div class="caption">
-                        <h3>Jason Davis</h3>
+                    <div class="caption text-justify">
+                        <h3>RINOPLASTIA</h3>
 
-                        <p>Doctor</p>
+                        <p>
+                            La nariz es el componente estructural más importante para la simetría y armonía facial,
+                            teniendo en cuenta su localización central. La Rinoplastia busca modificar la forma y el
+                            tamaño de la nariz para generar armonía estética con las demás estructuras de la cara. Se
+                            encuentra indicada en personas con deformidades secundarias a trauma o en mayores de 18 años
+                            con alteraciones en la anatomía como giba dorsal.
+                        </p>
+
+                        <p>
+                            La intervención es realiza bajo anestesia general, tiene una duración de 2 a 3 horas., se
+                            realiza por medio de incisiones por dentro de la nariz y ocasionalmente una pequeña en la
+                            columnela.
+                        </p>
+
+                        <p>
+                            En el posoperatorio permanecerás con una férula nasal rígida durante 1 semana y con cintas
+                            de micropore 2 semanas más. En algunos casos es necesario dejar unos tapones nasales los
+                            cuales se retirarán a las 48 horas de la cirugía posterior a lo cual podrás retomar tus
+                            actividades diarias.; sin embargo, se deben evitar los deportes de contacto como futbol o
+                            basquetbol durante 2 a 3 meses.
+
+                        </p>
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -607,80 +530,294 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="thumbnail">
+                    <img src="img/mentoplastia.jpg" alt="MENTOPLASTIA" class="team-img">
+
+                    <div class="caption text-justify">
+                        <h3>MENTOPLASTIA</h3>
+
+                        <p>
+                            La falta de proyección del mentón puede ser corregida mediante el uso de implantes de
+                            silicona. El procedimiento se realiza bajo anestesia local o general, tiene una duración
+                            aproximada de 60-90 minutos. Busca mejorar la proyección del mentón con lo cual se mejora la
+                            armonía de la cara, frecuentemente se realiza con una Rinoplastia. No deja cicatrices
+                            evidentes.
+                        </p>
+
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="thumbnail">
+                    <img src="img/bichectomia.jpg" alt="BICHECTOMIA: “CIRUGÍA DE LOS CACHETES”" class="team-img">
+
+                    <div class="caption text-justify">
+                        <h3>BICHECTOMIA: “CIRUGÍA DE LOS CACHETES”</h3>
+
+                        <p>
+                            La Bichectomia es un procedimiento ambulatorio que se realiza bajo anestesia local y tiene
+                            una duración aproximada de 30 minutos. Busca adelgazar las mejillas y perfilar las
+                            estructuras de la cara resaltando los pómulos.
+                        </p>
+
+                        <p>
+                            Se realiza una incisión de 5mm dentro de la boca, a través de la cual se reseca la Bolsa de
+                            Bichat que es una bolsa grasa localizada en la cara interna de la mejilla.
+                            No requiere puntos, y las incisiones se cierran solas en las primeras 48 horas. Solo
+                            necesitas un fin de semana para estar en casa.
+                        </p>
+
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="thumbnail">
+                    <img src="img/ritidoplastia.jpg" alt="RITIDOPLASTIA" class="team-img">
+
+                    <div class="caption text-justify">
+                        <h3>RITIDOPLASTIA</h3>
+
+                        <p>
+                            La ritidoplastia es una cirugía que busca devolver el aspecto joven a la cara por medio de
+                            la resección de piel y el reposicionamiento de los tejidos con el fin de dar un resultado
+                            sano, natural y juvenil. Su objetivo principal es el tercio medio e inferior de la cara que
+                            incluye las mejillas, el mentón y el cuello; sin embargo, frecuentemente se realiza en
+                            conjunto con una frontoplastia y blefaroplastia para recuperar una mirada joven.
+                        </p>
+
+                        <p>
+                            Se encuentra indicado en personas que presenten envejecimiento facial o piel laxa por
+                            pérdida de peso. La intervención se realiza bajo anestesia general, y la duración depende de
+                            las áreas a tratar. En el posoperatorio necesitaras usar una faja especial para el rostro y
+                            aproximadamente a las 2 o 3 semanas podrás volver a tu trabajo.
+                        </p>
+
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fb-comments col-md-6 col-sm-12 col-xs-12"
+                 data-href="https://marcelaarias.herokuapp.com/#surgeryface" data-numposts="5"></div>
         </div>
     </div>
 </section>
-<!--/ doctor team-->
-<!--testimonial-->
-<section id="testimonial" class="section-padding">
+<!--/ surgeryface-->
+<!--surgerybody-->
+<section id="surgerybody" class="section-padding">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="ser-title">see what patients are saying?</h2>
+                <h2 class="ser-title">CIRUGÍA CORPORAL</h2>
                 <hr class="botm-line">
             </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="testi-details">
-                    <!-- Paragraph -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                </div>
-                <div class="testi-info">
-                    <!-- User Image -->
-                    <a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
-                    <!-- User Name -->
-                    <h3>Alex<span>Texas</span></h3>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="testi-details">
-                    <!-- Paragraph -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                </div>
-                <div class="testi-info">
-                    <!-- User Image -->
-                    <a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
-                    <!-- User Name -->
-                    <h3>Alex<span>Texas</span></h3>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="testi-details">
-                    <!-- Paragraph -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                </div>
-                <div class="testi-info">
-                    <!-- User Image -->
-                    <a href="#"><img src="img/thumb.png" alt="" class="img-responsive"></a>
-                    <!-- User Name -->
-                    <h3>Alex<span>Texas</span></h3>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="thumbnail">
+                    <img src="img/liposuccion.jpg" alt="LIPOSUCCIÓN - LIPOESCULTURA" class="team-img">
+
+                    <div class="caption text-justify">
+                        <h3>LIPOSUCCIÓN - LIPOESCULTURA</h3>
+
+                        <p>
+                            La lipoescultura tiene como objetivo esculpir (moldear) de forma armónica el cuerpo por
+                            medio de la extracción de acúmulos de grasa en áreas no deseadas y en algunos casos
+                            utilizarla para aumentar zonas específicas como los glúteos; para recuperar la armonía
+                            corporal y lograr un cuerpo esbelto y balanceado.
+                        </p>
+
+                        <p>
+                            El Laser, Vaser y el Microaire, permiten optimizar los resultados de la cirugía; su
+                            indicación depende de los ideales de cada paciente y de sus características individuales.
+                        </p>
+
+                        <p>
+                            El procedimiento se realiza bajo anestesia general por medio de incisiones de 5mm
+                            localizadas en áreas anatómicas poco visibles. En el postoperatorio necesitaras usas una
+                            faja completa durante 2 meses, inicialmente 24 horas al día y luego 12. Podrás volver a tu
+                            trabajo a los 7 días y realizar ejercicio al mes.
+                        </p>
+
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="thumbnail">
+                    <img src="img/aumento.jpg" alt="MAMOPLASTIA DE AUMENTO" class="team-img">
+
+                    <div class="caption text-justify">
+                        <h3>MAMOPLASTIA DE AUMENTO</h3>
+
+                        <p>
+                            El tamaño ideal de los senos varía de acuerdo a cada persona y a su preferencia cultural. La
+                            mamoplastia de aumento es un procedimiento que no solo aumenta el volumen de los senos sino
+                            mejora la forma y la proyección, utilizado una prótesis de silicona.
+                        </p>
+
+                        <p>
+                            El procedimiento se realiza bajo anestesia general, a través de una pequeña incisión de
+                            2-acmé en el pliegue inferior del seno o en el margen inferior de la areola, según las
+                            características de cada paciente; la prótesis mamaria se puede colocar bajo el musculo,
+                            detrás del tejido mamario o en plano dual, esto se define durante la valoración médica. La
+                            Dra. Arias únicamente utiliza implantes certificados y garantizados con aprobación FDA (Food
+                            and Drugs Administration) y/o sello de la Comunidad Europea.
+                        </p>
+
+                        <p>
+                            Después de la cirugía necesitas usar un brassier postoperatorio durante 24 horas 1 mes y
+                            luego solo en el día durante 1 mes. En 3-4 días podrás volver a tu trabajo.
+                        </p>
+
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="thumbnail">
+                    <img src="img/reduccion.jpg" alt="MAMOPLASTIA DE REDUCCIÓN" class="team-img">
+
+                    <div class="caption text-justify">
+                        <h3>MAMOPLASTIA DE REDUCCIÓN</h3>
+
+                        <p>
+                            La mamoplastia de reducción tiene como objetivo mejorar la forma, reducir el tamaño y elevar
+                            los senos. Está indicada en pacientes mayores de 18 años con senos grandes, asimétricos o
+                            que presenten algún tipo de limitación funcional por el tamaño, tales como dolor de espalda,
+                            cuello o hombros.
+                        </p>
+
+                        <p>
+                            La cirugía se realiza bajo anestesia general, su duración varía entre 2-3 horas y necesitas
+                            de 4 a 7 días para descansar en casa. Podrás volver a hacer ejercicio un mes después. Las
+                            cicatrices dependen del tamaño inicial de los senos y se discuten previamente durante la
+                            consulta.
+                        </p>
+
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="thumbnail">
+                    <img src="img/pexia.jpg" alt="PEXIA MAMARIA" class="team-img">
+
+                    <div class="caption text-justify">
+                        <h3>PEXIA MAMARIA</h3>
+
+                        <p>
+                            Con el paso de los años, la perdida de elasticidad de los tejidos y algunos cambios
+                            secundarios a la lactancia, llevan al descenso y perdida de proyección de los senos.
+                        </p>
+
+                        <p>
+                            La pexia mamaria tiene como objetivo elevar los senos, mejorar la forma, restaurar el
+                            volumen y reposicionar la areola y el pezón. La mastopexia puede realizarse con o sin
+                            implantes de silicona según las características de cada paciente.
+                        </p>
+
+                        <p>
+                            Después de la cirugía es necesario usar brassier postoperatorio 24 horas al día durante el
+                            primer mes y 12 horas durante el segundo; necesitas 4-7 días para descansar en casa y podrás
+                            volver a realizar ejercicio al mes.
+                        </p>
+
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="thumbnail">
+                    <img src="img/abdominoplastia.jpg" alt="ABDOMINOPLASTIA" class="team-img">
+
+                    <div class="caption text-justify">
+                        <h3>ABDOMINOPLASTIA</h3>
+
+                        <p>
+                            La pérdida de peso, el embarazo y la disminución de la elasticidad de la piel, generan
+                            cambios importantes en la apariencia del abdomen. La Abdominoplastía busca recuperar la
+                            armonía de la pared abdominal, acentuar el contorno y definir la cintura. En algunos casos
+                            se realiza en conjunto con liposucción de la espalda para optimizar los resultados.
+                        </p>
+
+                        <p>
+                            El procedimiento se realiza bajo anestesia general; por medio de una incisión en la parte
+                            baja del abdomen se reseca el exceso de piel y se aplican los músculos rectos abdominales y
+                            oblicuos para rejuvenecer y restablecer la característica armónica del abdomen.
+                        </p>
+
+                        <p>
+                            Al finalizar el procedimiento debes usar una faja de compresión abdominal las 24 horas el
+                            primer mes y luego 12 horas al día. Necesitas 5 a días para descansar en casa y podrás
+                            realizar ejercicio abdominal de forma progresiva a partir de los 2 meses.
+                        </p>
+
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="thumbnail">
+                    <img src="img/gluteoplastia.jpg" alt="GLUTEOPLASTIA" class="team-img">
+
+                    <div class="caption text-justify">
+                        <h3>GLUTEOPLASTIA</h3>
+
+                        <p>
+                            La cirugía de aumento de glúteos busca mejorar no solo el volumen sino la forma y la
+                            proyección de las nalgas; se realiza por medio de la inserción una prótesis de silicona a
+                            través de una incisión en la línea interglutea, por lo cual no tendrás cicatrices visibles.
+                            En algunos casos se realiza también extracción de acúmulos grasos localizados en áreas
+                            específicas, con el fin de optimizar los resultados. Después de la cirugía necesitas estar
+                            en casa durante 5 a 7 días y usar una faja pantalón durante 1 mes. </p>
+
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fb-comments col-md-6 col-sm-12 col-xs-12"
+                 data-href="https://marcelaarias.herokuapp.com/#surgerybody" data-numposts="5"></div>
         </div>
     </div>
 </section>
-<!--/ testimonial-->
-<!--cta 2-->
-<section id="cta-2" class="section-padding">
-    <div class="container">
-        <div class=" row">
-            <div class="col-md-2"></div>
-            <div class="text-right-md col-md-4 col-sm-4">
-                <h2 class="section-title white lg-line">« A few words<br> about us »</h2>
-            </div>
-            <div class="col-md-4 col-sm-5">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a typek
-                <p class="text-right text-primary"><i>— Medilap Healthcare</i></p>
-            </div>
-            <div class="col-md-2"></div>
-        </div>
-    </div>
-</section>
-<!--cta-->
+<!--/ surgerybody-->
 <!--contact-->
 <section id="contact" class="section-padding">
     <div class="container">
@@ -755,16 +892,35 @@
             </div>
         </div>
         <br>
-        <iframe
-                width="100%"
-                height="300px"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC15Qc8oPn_lc407MZ_YS8BHcglTgTVTE4&q=Edificio Santa Ana Medical Center, Cl. 119 #7-14, Bogotá, Cundinamarca, Colombia&zoom=12"
-                allowfullscreen>
-        </iframe>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+                <div class="fb-page"
+                     data-href="https://www.facebook.com/Marcela-Arias-Cirug%C3%ADa-Pl%C3%A1stica-1418731681525700/"
+                     data-tabs="messages" data-height="300" data-small-header="true" data-adapt-container-width="false"
+                     data-hide-cover="false" data-show-facepile="false">
+                    <blockquote
+                            cite="https://www.facebook.com/Marcela-Arias-Cirug%C3%ADa-Pl%C3%A1stica-1418731681525700/"
+                            class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/Marcela-Arias-Cirug%C3%ADa-Pl%C3%A1stica-1418731681525700/">Marcela
+                        Arias - Cirugía Plástica</a></blockquote>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-12">&nbsp;</div>
+            <div class="col-md-7 col-sm-7 col-xs-12">
+                <iframe
+                        width="100%"
+                        height="300px"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC15Qc8oPn_lc407MZ_YS8BHcglTgTVTE4&q=Edificio Santa Ana Medical Center, Cl. 119 #7-14, Bogotá, Cundinamarca, Colombia&zoom=12"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
     </div>
 </section>
 <!--/ contact-->
+
 <!--footer-->
 <footer id="footer">
     <div class="top-footer">
@@ -772,35 +928,41 @@
             <div class="row">
                 <div class="col-md-4 col-sm-4 marb20">
                     <div class="ftr-tle">
-                        <h4 class="white no-padding">About Us</h4>
+                        <h4 class="white no-padding">DRA. MARCELA ARIAS</h4>
                     </div>
                     <div class="info-sec">
-                        <p>Praesent convallis tortor et enim laoreet, vel consectetur purus latoque penatibus et dis
-                            parturient.</p>
+                        <p>Especialista en Cirugía Plástica</p>
+
+                        <p>Certificada y Acreditada.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 marb20">
                     <div class="ftr-tle">
-                        <h4 class="white no-padding">Quick Links</h4>
+                        <h4 class="white no-padding">Enlaces</h4>
                     </div>
                     <div class="info-sec">
                         <ul class="quick-info">
-                            <li><a href="index.html"><i class="fa fa-circle"></i>Inicio</a></li>
-                            <li><a href="#surgery"><i class="fa fa-circle"></i>surgery</a></li>
-                            <li><a href="#contact"><i class="fa fa-circle"></i>Appointment</a></li>
+                            <li><a href="#banner"><i class="fa fa-circle"></i>Inicio</a></li>
+                            <li><a href="#about"><i class="fa fa-circle"></i>Dra. Marcela Arias</a></li>
+                            <li><a href="#contact"><i class="fa fa-circle"></i>Contáctanos</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 marb20">
                     <div class="ftr-tle">
-                        <h4 class="white no-padding">Follow us</h4>
+                        <h4 class="white no-padding">Siguenos en redes!</h4>
                     </div>
                     <div class="info-sec">
                         <ul class="social-icon">
-                            <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
-                            <li class="bgred"><i class="fa fa-google-plus"></i></li>
-                            <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
-                            <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+                            <a href="https://www.facebook.com/Marcela-Arias-Cirug%C3%ADa-Pl%C3%A1stica-1418731681525700/"
+                               target="_blank">
+                                <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+                            </a>
+
+                            <div class="fb-like"
+                                 data-href="https://www.facebook.com/Marcela-Arias-Cirug%C3%ADa-Pl%C3%A1stica-1418731681525700/"
+                                 data-layout="button_count" data-action="like" data-size="small" data-show-faces="true"
+                                 data-share="true"></div>
                         </ul>
                     </div>
                 </div>
