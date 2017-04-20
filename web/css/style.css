@@ -83,7 +83,7 @@ banner
 }
 
 .navbar-default {
-    background-color: transparent;
+    background-color: rgba(39, 58, 80, 1);
     border: 0px;
 }
 
@@ -100,10 +100,6 @@ banner
     padding-top: 2px;
     width: 180px !important;
     margin-top: -10px;
-}
-
-.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    color: #EA6045;
 }
 
 .top-nav-collapse {
@@ -197,7 +193,7 @@ banner
 
     .banner-logo img {
         display: inline-block;
-        width: 50%;
+        width: 32%;
     }
 }
 
