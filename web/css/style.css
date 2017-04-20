@@ -162,7 +162,35 @@ banner
 @media (min-width: 320px) and (max-width: 480px) {
     /* iPhone, Android rules here */
     #banner {
-        background: url('../img/bg-banner1.jpg') no-repeat fixed;
+        background: url('../img/logo1.png') no-repeat fixed;
+        background-size: cover;
+        position: relative;
+    }
+
+    .banner-logo img {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* rules for iPad in landscape orientation */
+    #banner {
+        background: url('../img/logo1.png') no-repeat fixed;
+        background-size: cover;
+        position: relative;
+    }
+
+    .banner-logo img {
+        display: inline-block;
+        width: 70%;
+    }
+}
+
+@media (min-width: 769px) {
+    /* rules that only apply for canvases narrower than 1000px */
+    #banner {
+        background: url('../img/logo1.png') no-repeat fixed;
         background-size: cover;
         position: relative;
     }
@@ -170,34 +198,6 @@ banner
     .banner-logo img {
         display: inline-block;
         width: 50%;
-    }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-    /* rules for iPad in landscape orientation */
-    #banner {
-        background: url('../img/bg-banner2.jpg') no-repeat fixed;
-        background-size: cover;
-        position: relative;
-    }
-
-    .banner-logo img {
-        display: inline-block;
-        width: 30%;
-    }
-}
-
-@media (min-width: 769px) {
-    /* rules that only apply for canvases narrower than 1000px */
-    #banner {
-        background: url('../img/bg-banner.jpg') no-repeat fixed;
-        background-size: cover;
-        position: relative;
-    }
-
-    .banner-logo img {
-        display: inline-block;
-        width: 20%;
     }
 }
 
