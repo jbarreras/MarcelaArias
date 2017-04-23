@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +13,36 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen"/>
+
+    <!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+
+    <style type="text/css">
+        .flex-caption {
+            width: 96%;
+            padding: 2%;
+            left: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, .5);
+            color: #fff;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        li.css a {
+            border-radius: 0;
+        }
+    </style>
+
+    <script src="https://apis.google.com/js/platform.js" async defer>
+        {
+            lang: 'es'
+        }
+    </script>
     <!-- =======================================================
         Theme Name: Medilab
         Theme URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
@@ -36,6 +66,7 @@
 <!--banner-->
 <section id="banner" class="banner">
     <div class="bg-color">
+
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="col-md-12">
@@ -51,39 +82,75 @@
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#banner">INICIO</a></li>
                             <li class=""><a href="#about">DRA. MARCELA ARIAS</a></li>
-                            <li class=""><a href="#nosurgery">NO QUIRÚRGICOS</a></li>
+
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                   aria-haspopup="true" aria-expanded="false">QUIRÚRGICOS <span
+                                   aria-haspopup="true" aria-expanded="false">NO QUIRÚRGICOS<span
                                         class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li class=""><a href="#surgeryface">CIRUGÍA FACIAL</a></li>
-                                    <li class=""><a href="#surgerybody">CIRUGÍA CORPORAL</a></li>
+                                    <li class=""><a href="#plasma">PLASMA RICO EN PLAQUETAS</a></li>
+                                    <li class=""><a href="#botox">TOXINA BOTULÍNICA</a></li>
+                                    <li class=""><a href="#colageno">TERAPIA DE INDUCCIÓN DE COLÁGENO</a></li>
+                                    <li class=""><a href="#hialuronico">ÁCIDO HIALURONICO</a></li>
                                 </ul>
                             </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">CIRUGÍA FACIAL<span
+                                        class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class=""><a href="#frotoplastia">FROTOPLASTIA</a></li>
+                                    <li class=""><a href="#blefaroplastia">BLEFAROPLASTIA</a></li>
+                                    <li class=""><a href="#otoplastia">OTOPLASTIA</a></li>
+                                    <li class=""><a href="#rinoplastia">RINOPLASTIA</a></li>
+                                    <li class=""><a href="#mentoplastia">MENTOPLASTIA</a></li>
+                                    <li class=""><a href="#bichectomia">BICHECTOMIA</a></li>
+                                    <li class=""><a href="#ritidoplastia">RITIDOPLASTIA</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">CIRUGÍA CORPORAL<span
+                                        class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class=""><a href="#liposuccion">LIPOSUCCIÓN - LIPOESCULTURA</a></li>
+                                    <li class=""><a href="#aumento">MAMOPLASTIA DE AUMENTO</a></li>
+                                    <li class=""><a href="#reduccion">MAMOPLASTIA DE REDUCCIÓN</a></li>
+                                    <li class=""><a href="#pexia">PEXIA MAMARIA</a></li>
+                                    <li class=""><a href="#abdominoplastia">ABDOMINOPLASTIA</a></li>
+                                    <li class=""><a href="#gluteoplastia">GLUTEOPLASTIA</a></li>
+                                </ul>
+                            </li>
+
                             <li class=""><a href="#contact">CONTÁCTANOS</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="container">
-            <div class="row">
-                <div class="banner-info">
-                    <div class="banner-logo text-center">
-                        <img src="img/logo1.png" title="DRA. MARCELA ARIAS">
-                    </div>
-                    <div class="banner-text text-center">
-                        <h1 class="white"></h1>
+        <br>
+        <br>
+        <br>
+        <br>
 
-                        <p><i></i></p>
-                    </div>
-                    <br>
-
-                    <div class="overlay-detail text-center">
-                        <a href="#about"><i class="fa fa-angle-down"></i></a>
-                    </div>
-                </div>
+        <div class="slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img src="img/slide1.jpg"/>
+                    </li>
+                    <li>
+                        <img src="img/slide2.jpg"/>
+                    </li>
+                    <li>
+                        <img src="img/slide3.jpg"/>
+                    </li>
+                    <li>
+                        <img src="img/slide4.jpg"/>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -100,8 +167,8 @@
 
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="thumbnail">
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <img src="img/bg-banner3.jpg" alt="DRA. MARCELA ARIAS" class="team-img" width="100%">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img src="img/about.jpg" alt="DRA. MARCELA ARIAS" class="team-img" width="100%">
                     </div>
 
                     <div class="caption text-justify">
@@ -132,8 +199,8 @@
 
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
@@ -152,16 +219,7 @@
                 <h2 class="ser-title">NO QUIRÚRGICOS</h2>
                 <hr class="botm-line">
             </div>
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="thumbnail">
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <img src="img/noquirurgicos.jpg" alt="NO QUIRÚRGICOS" class="team-img" width="100%">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="plasma" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/plasma.jpg" alt="PLASMA RICO EN PLAQUETAS" class="team-img">
 
@@ -211,13 +269,13 @@
                         </p>
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="botox" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/botox.jpg" alt="TOXINA BOTULÍNICA" class="team-img">
 
@@ -266,13 +324,13 @@
                         </p>
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="colageno" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/colageno.jpg" alt="TERAPIA DE INDUCCIÓN DE COLÁGENO" class="team-img">
 
@@ -319,13 +377,13 @@
                         </p>
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="hialuronico" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/hialuronico.jpg" alt="ÁCIDO HIALURONICO" class="team-img">
 
@@ -359,8 +417,8 @@
                         </p>
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
@@ -379,14 +437,7 @@
                 <h2 class="ser-title">CIRUGÍA FACIAL</h2>
                 <hr class="botm-line">
             </div>
-            <!--div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="thumbnail">
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <img src="img/quirurgicos.jpg" alt="QUIRÚRGICOS" class="team-img" width="100%">
-                    </div>
-                </div>
-            </div-->
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="frotoplastia" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/frontoplastia.jpg" alt="FROTOPLASTIA" class="team-img">
 
@@ -416,13 +467,13 @@
 
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="blefaroplastia" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/botox.jpg" alt="BLEFAROPLASTIA" class="team-img">
 
@@ -453,13 +504,13 @@
                         </p>
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="otoplastia" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/otoplastia.jpg" alt="OTOPLASTIA" class="team-img">
 
@@ -491,13 +542,13 @@
 
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="rinoplastia" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/rinoplastia.jpg" alt="RINOPLASTIA" class="team-img">
 
@@ -528,13 +579,13 @@
                         </p>
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="mentoplastia" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/mentoplastia.jpg" alt="MENTOPLASTIA" class="team-img">
 
@@ -551,13 +602,13 @@
 
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="bichectomia" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/bichectomia.jpg" alt="BICHECTOMIA: “CIRUGÍA DE LOS CACHETES”" class="team-img">
 
@@ -579,13 +630,13 @@
 
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="ritidoplastia" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/ritidoplastia.jpg" alt="RITIDOPLASTIA" class="team-img">
 
@@ -609,8 +660,8 @@
 
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
@@ -629,7 +680,7 @@
                 <h2 class="ser-title">CIRUGÍA CORPORAL</h2>
                 <hr class="botm-line">
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="liposuccion" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/liposuccion.jpg" alt="LIPOSUCCIÓN - LIPOESCULTURA" class="team-img">
 
@@ -657,13 +708,13 @@
 
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="aumento" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/aumento.jpg" alt="MAMOPLASTIA DE AUMENTO" class="team-img">
 
@@ -692,13 +743,13 @@
 
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="reduccion" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/reduccion.jpg" alt="MAMOPLASTIA DE REDUCCIÓN" class="team-img">
 
@@ -721,13 +772,13 @@
 
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="pexia" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/pexia.jpg" alt="PEXIA MAMARIA" class="team-img">
 
@@ -753,13 +804,13 @@
 
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="abdominoplastia" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/abdominoplastia.jpg" alt="ABDOMINOPLASTIA" class="team-img">
 
@@ -787,13 +838,13 @@
 
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div id="gluteoplastia" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="thumbnail">
                     <img src="img/gluteoplastia.jpg" alt="GLUTEOPLASTIA" class="team-img">
 
@@ -810,8 +861,8 @@
 
                         <ul class="list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <!--li><a href="#"><i class="fa fa-twitter"></i></a></li-->
+                            <div class="g-plusone"></div>
                         </ul>
                     </div>
                 </div>
@@ -900,13 +951,13 @@
         <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-12 text-center">
                 <div class="fb-page"
-                     data-href="https://www.facebook.com/Marcela-Arias-Cirug%C3%ADa-Pl%C3%A1stica-1418731681525700/"
+                     data-href="https://www.facebook.com/marcelaarias.cirugiaplastica.5/"
                      data-tabs="messages" data-height="300" data-small-header="true" data-adapt-container-width="false"
                      data-hide-cover="false" data-show-facepile="false">
                     <blockquote
-                            cite="https://www.facebook.com/Marcela-Arias-Cirug%C3%ADa-Pl%C3%A1stica-1418731681525700/"
+                            cite="https://www.facebook.com/marcelaarias.cirugiaplastica.5/"
                             class="fb-xfbml-parse-ignore"><a
-                            href="https://www.facebook.com/Marcela-Arias-Cirug%C3%ADa-Pl%C3%A1stica-1418731681525700/">Marcela
+                            href="https://www.facebook.com/marcelaarias.cirugiaplastica.5/">Marcela
                         Arias - Cirugía Plástica</a></blockquote>
                 </div>
             </div>
@@ -958,13 +1009,13 @@
                     </div>
                     <div class="info-sec">
                         <ul class="social-icon">
-                            <a href="https://www.facebook.com/Marcela-Arias-Cirug%C3%ADa-Pl%C3%A1stica-1418731681525700/"
+                            <a href="https://www.facebook.com/marcelaarias.cirugiaplastica.5/"
                                target="_blank">
                                 <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
                             </a>
 
                             <div class="fb-like"
-                                 data-href="https://www.facebook.com/Marcela-Arias-Cirug%C3%ADa-Pl%C3%A1stica-1418731681525700/"
+                                 data-href="https://www.facebook.com/marcelaarias.cirugiaplastica.5/"
                                  data-layout="button_count" data-action="like" data-size="small" data-show-faces="true"
                                  data-share="true"></div>
                         </ul>
@@ -996,9 +1047,36 @@
 <!--/ footer-->
 
 <script src="js/jquery.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
+
+
+<!-- FlexSlider -->
+<script defer src="js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(function () {
+        SyntaxHighlighter.all();
+    });
+    $(window).load(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            prevText: "",
+            nextText: "",
+            start: function (slider) {
+                $('body').removeClass('loading');
+            }
+        });
+    });
+</script>
+
+<!-- Syntax Highlighter -->
+<script type="text/javascript" src="js/shCore.js"></script>
+<script type="text/javascript" src="js/shBrushXml.js"></script>
+<script type="text/javascript" src="js/shBrushJScript.js"></script>
+
+<!-- Optional FlexSlider Additions -->
+<script src="js/jquery.easing.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
 
 </body>
 </html>
